@@ -102,7 +102,7 @@ var app = React.createClass({
         React.createElement('h1', {}, 'Lista filmów'),
         React.createElement(MoviesList, {moviesList: movies})
       )
-    );
+    )
   }
 });
 

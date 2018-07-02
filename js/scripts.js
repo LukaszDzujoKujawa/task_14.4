@@ -35,7 +35,7 @@ var MoviesList = React.createClass({
   },
 
   render: function () {
-    const itemMovie = this.props.moviesList.map(function (item) {
+    const itemMovie = this.props.moviesList.maps(function (item) {
       return React.createElement(Movie, {movie: item, key: item.id})
     });
     return (
@@ -90,12 +90,12 @@ var MoviePoster = React.createClass({
 
   render: function () {
     return (
-      React.createElement('img', {src: this.props.moviePoster})
+      React.createElement('img''alt'="poster", {src: this.props.moviePoster})
     );
   }
 });
 
-var app = React.createClass({
+var app = React.CreateClass({
   render: function () {
     return (
       React.createElement('div', {},

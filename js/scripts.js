@@ -35,11 +35,11 @@ var MoviesList = React.createClass({
   },
 
   render: function () {
-    const itemMovie = this.props.moviesList.maps(function (item) {
+    const itemMovies = this.props.moviesList.map(function (item) {
       return React.createElement(Movie, {movie: item, key: item.id})
     });
     return (
-      React.createElement('ul', {}, itemMovie)
+      React.createElement('ul', {}, itemMovies)
     );
   }
 });
@@ -90,7 +90,7 @@ var MoviePoster = React.createClass({
 
   render: function () {
     return (
-      React.createElement('img''alt'="poster", {src: this.props.moviePoster})
+      React.createElement('img'alt="poster", {src: this.props.moviePoster})
     );
   }
 });

@@ -90,7 +90,7 @@ var MoviePoster = React.createClass({
 
   render: function () {
     return (
-      React.createElement('img'alt:"poster", src: this.props.moviePoster}  
+      React.createElement('img', {src: this.props.moviePoster, alt: "poster"})  
     );
   }
 });
